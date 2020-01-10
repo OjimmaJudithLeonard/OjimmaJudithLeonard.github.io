@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 2rem;
+}
+.sec1{
+    background-color: aliceblue;
+    height: 100vh;
+    padding:1rem;
+}
+.sec2{
+    background-color: #ff4000;
+    height: 80vh;
+    opacity: 0.9;  
+    background-size: cover; 
+    padding-bottom: 2rem;
+}
+img{
+    width: 100rem;
+    /* height: 50%; */
+}
+.card{
+    background-color: rgba(233, 229, 229, 0.877);
+    height: 60vh;
+    margin-top: -4rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    padding: 2rem;
+}
+.cons {
+    font-size: 6rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #eb8e6f, #ff4000);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.text-body{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 2rem;
+}
+.fade-carousel {
+    position: relative;
+    height: 100vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 100vh;
+}
+.hero{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    z-index: 3;
+    text-align: center;
+    /* text-transform: uppercase; */
+    transform: translateX(-50%); 
+    /* transform: translateY(-10%); */
+    /* text-align: center;    */
+}
+.hero h1 {
+    font-size: 7rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: rgba(37, 37, 37, 0.932);
+    letter-spacing: 1.5rem;
+    color: #e62e00;
+    /* font-style: italic; */
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    z-index: 2;
+    background-color: white;
+    opacity: .8;
+}
+.fade-carousel .slides .slide-1,
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+    background-image: url('../img/uba-customer-care.jpg');
+}
+.fade-carousel .slides .slide-2 {
+    background-image: url('../img/UBA-BANK.jpg');
+}
+.fade-carousel .slides .slide-3 {
+    background-image: url('../img/customer-support\ \(1\).jpg');
+}
+.logo-box{
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+}
+.logo{
+   width: 20%;
+}
+.ju{
+    position: absolute;
+    top: 4rem;
+    left: 85%;
+    display: inline-block;
+    text-align: center;
+}
+.judith{
+    width: 50%;
+    border-radius: 50%;
+}
+.footer{
+    height: 30vh;
+    background-color: rgba(53, 52, 52, 0.932);
+    position: relative;
+}
+.write {
+    text-align: center; 
+    color: white; 
+    position: absolute; 
+    top: 40%; 
+    left: 40%;
+}
+@media screen and (min-width: 980px){
+    .hero {width: 980px;}
+}
+@media screen and (min-width: 640px){
+    .hero h1 {font-size: 4rem ;}
+} 
+@media (max-width: 640px) {
+    .hero h1 {font-size: 2rem; letter-spacing: 1rem;}
+    body {padding: .5rem;}
+    .sec2 {height: 180vh;}
+    .text-body{font-size: 1.2rem;}
+    .write{top: 30%; left: 20%; font-size: 1.5rem;}
+    .ju h4 {font-size: 1rem;}
+}
